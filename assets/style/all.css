@@ -8606,6 +8606,18 @@ fieldset:disabled .btn {
   font-size: 0.75rem !important;
 }
 
+.fs-11 {
+  font-size: calc(1.425rem + 2.1vw) !important;
+}
+
+.fs-12 {
+  font-size: calc(1.56rem + 3.72vw) !important;
+}
+
+.fs-13 {
+  font-size: calc(1.2875rem + 0.45vw) !important;
+}
+
 .fst-italic {
   font-style: italic !important;
 }
@@ -11787,6 +11799,15 @@ fieldset:disabled .btn {
   .fs-7 {
     font-size: 1.375rem !important;
   }
+  .fs-11 {
+    font-size: 3rem !important;
+  }
+  .fs-12 {
+    font-size: 4.35rem !important;
+  }
+  .fs-13 {
+    font-size: 1.625rem !important;
+  }
 }
 
 @media print {
@@ -11826,7 +11847,15 @@ fieldset:disabled .btn {
   }
 }
 
-.logo img {
+body {
+  font-family: 'Roboto Mono', monospace;
+}
+
+.logo {
+  background: url(../images/logo.svg) no-repeat;
+  text-indent: 101%;
+  white-space: nowrap;
+  overflow: hidden;
   width: 170px;
   height: 42px;
 }
@@ -11840,10 +11869,36 @@ fieldset:disabled .btn {
   color: gray;
 }
 
-.banner1 {
-  background-image: url(../../images/bg_home.jpg);
+.banner {
+  background-image: url(../images/bg_home.jpg);
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: center center;
+  height: 680px;
+}
+
+.banner .box {
+  width: 650px;
+  height: 260px;
+}
+
+.banner .box > h2, .banner .box > .h2 {
+  background: -webkit-gradient(linear, left bottom, left top, from(#62DB54), to(#09ACF5));
+  background: -o-linear-gradient(bottom, #62DB54, #09ACF5);
+  background: linear-gradient(to top, #62DB54, #09ACF5);
+  -webkit-background-clip: text;
+          background-clip: text;
+  color: transparent;
+}
+
+.banner .box h2, .banner .box .h2 {
+  font-weight: bold;
+}
+
+.banner .square {
+  width: 10px;
+  height: 10px;
+  background-color: #fff;
 }
 
 /*# sourceMappingURL=all.css.map */
