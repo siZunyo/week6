@@ -1,8 +1,13 @@
+body{
+  font-family: 'Roboto Mono', monospace;
+}
 .logo{
-  img{
-    width: 170px;
-    height: 42px;
-  }
+  background:url(../images/logo.svg) no-repeat;
+  text-indent: 101%;
+  white-space: nowrap;
+  overflow: hidden;
+  width: 170px;
+  height: 42px;
 }
 .menu{
   a {
@@ -13,8 +18,27 @@
     color:gray;
   }
 }
-.banner1{
-  background-image: url(../../images/bg_home.jpg);
+.banner{
+  background-image: url(../images/bg_home.jpg);
   background-repeat: no-repeat;
   background-size: cover;  
+  background-position: center center;
+  height: 680px;
+  .box{
+    width: 650px;
+    height: 260px;
+    >h2{
+      background: linear-gradient(to top, #62DB54, #09ACF5);
+      background-clip: text;
+      color: transparent;
+    }
+    h2{
+      font-weight: bold;
+    }
+  }
+  .square {
+    width: 10px;
+    height: 10px;
+    background-color: #fff;
+  }
 }
