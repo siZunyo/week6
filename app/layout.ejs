@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title><%- title %></title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" />
+    <link rel="stylesheet" href="./assets/style/all.css">
+  </head>
+
+  <body>
+    
+    <nav class="bg-bgc1 sticky-top">
+      <div class="container">
+        <div class="row py-4">
+          <div class="col-6 align-items-center">
+            <a href="./index.html">
+              <h1 class="logo"><img src="./assets/images/logo.svg" alt="logo"></h1>
+            </a>
+          </div>
+          <ul class="menu col-6 list-unstyled d-flex justify-content-end align-items-center">
+            <li><a href="./index.html" class="px-4 fs-8">首頁</a></li>
+            <li><a href="" class="px-4 fs-8">課程介紹</a></li>
+            <li><a href="" class="px-4 fs-8">登入</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-6 border-bottom border-primary border-2"></div>
+          <div class="col-6 border-bottom border-secondary border-2"></div>
+        </div>
+      </div>
+    </nav>
+
+    <%- contents %>
+
+    <footer class="footer">
+      Coding Home © 2022 All Rights Reserved
+    </footer>
+
+    <script src="./assets/js/vendors.js"></script>
+    <script src="./assets/js/all.js"></script>
+  </body>
+
+</html>
